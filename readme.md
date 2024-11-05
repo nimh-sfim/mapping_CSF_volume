@@ -25,4 +25,8 @@ Here is information on how to run these scripts:
     - If not NORDIC run: combine_runs_3TI_3TE_SPM.sh
 1) To make time course maps:
     - Run make_timecourse_edited copy_final.sh
+  
+### Scan Parameters:
+
+This folder contains information about the scan parameters generally used for the scans in this project.
 
