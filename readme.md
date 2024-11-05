@@ -26,7 +26,7 @@ Here is information on how to run these scripts:
 1) To make time course maps:
     - Run make_timecourse_edited copy_final.sh
   
-### Scan Parameters:
+#### Scan Parameters:
 
 This folder contains information about the scan parameters generally used for the scans in this project.
 
