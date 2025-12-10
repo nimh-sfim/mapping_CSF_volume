@@ -1,5 +1,7 @@
 ## DOCUMENTATION FOR SWEGLE ET AL., TOWARDS MAPPING CSF VOLUME CHANGE AT HIGH RESOLUTIONS AT 7T, 2024
 
+Project updated in December 2025. Scripts below moved into ```Scripts_old``` and new processing pipelines can be found in ```Code/bash```. 
+
 #### Scripts:
 
 This folder contains the scripts used to process the imaging data. 
