@@ -2,6 +2,11 @@
 
 RawData
 ProcessedData
+OrigData
+PrcsData
+swarm*.o
+swarm*.e
+Swarm
 extra_unused
 ExtraData
 ~$pt 25 scan.docx
