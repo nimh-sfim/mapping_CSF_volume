@@ -2,8 +2,8 @@ set -e
   
 ml afni
 
-ORIG_DATA_DIR='/data/SFIM_CSF_Volume/Project01/OrigData/'
-PRCS_DATA_DIR='/data/SFIM_CSF_Volume/Project01/PrcsData/'
+ORIG_DATA_DIR='/data/SFIM_CSF_Volume/Project01/OrigData/New_Sequence'
+PRCS_DATA_DIR='/data/SFIM_CSF_Volume/Project01/PrcsData/New_Sequence'
 
 PRCS_DATA_DIR_THIS_RUN=`echo ${PRCS_DATA_DIR}/${SBJ}/${SES}/${RUN}/`
 ORIG_DATA_DIR_THIS_RUN=`echo ${ORIG_DATA_DIR}/${SBJ}/${SES}/${RUN}/`
@@ -23,5 +23,5 @@ done
 echo "++ Make sure to check and manually correct the mask located at: ${PRCS_DATA_DIR_THIS_RUN}pb01.${RUN}_all.FBmask.nii
 echo "++ Also create a list of volumes to be censored for this run at: ${PRCS_DATA_DIR_THIS_RUN}${RUN}_bad_volumes_manual.1D"
 echo "   this will be a file with a single line that contains the ids to bad volumes separated by commas"
-echo "   use AFNI indexing (starting at zero)"
+echo "   use AFNI indexing starting at zero"
 echo "   You need to complete these steps, prior to moving to the next script"

@@ -3,8 +3,8 @@ set -e
 ml fsl
 ml afni
 
-ORIG_DATA_DIR='/data/SFIM_CSF_Volume/Project01/OrigData/'
-PRCS_DATA_DIR='/data/SFIM_CSF_Volume/Project01/PrcsData/'
+ORIG_DATA_DIR='/data/SFIM_CSF_Volume/Project01/OrigData/New_Sequence'
+PRCS_DATA_DIR='/data/SFIM_CSF_Volume/Project01/PrcsData/New_Sequence'
 
 PRCS_DATA_DIR_THIS_RUN=`echo ${PRCS_DATA_DIR}/${SBJ}/${SES}/${RUN}/`
 ORIG_DATA_DIR_THIS_RUN=`echo ${ORIG_DATA_DIR}/${SBJ}/${SES}/${RUN}/`

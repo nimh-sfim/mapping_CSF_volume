@@ -1,12 +1,12 @@
 set -e
 
-SWARM_FILE='/data/SFIM_CSF_Volume/Project01/Swarm/S05.SWWARM.sh'
+SWARM_FILE='/data/SFIM_CSF_Volume/Project01/Swarm/S07.SWWARM.sh'
 LOGS_DIR='/data/SFIM_CSF_Volume/Project01/Logs'
-ORIG_DATA_DIR='/data/SFIM_CSF_Volume/Project01/OrigData/New_Sequence'
+ORIG_DATA_DIR='/data/SFIM_CSF_Volume/Project01/OrigData//New_Sequence'
 PRCS_DATA_DIR='/data/SFIM_CSF_Volume/Project01/PrcsData/New_Sequence'
 
 echo "#Create Date: `date`" > ${SWARM_FILE}
-echo "# swarm -f ${SWARM_FILE} -g 24 -t 16 -b 3 --time 01:59:00 --module afni --partition quick,norm --logdir ${LOGS_DIR}" >> ${SWARM_FILE}
+echo "# swarm -f ${SWARM_FILE} -g 24 -t 16 -b 3 --time 00:30:00 --module afni --partition quick,norm --logdir ${LOGS_DIR}" >> ${SWARM_FILE}
 for SBJ in SBJ01 SBJ02 SBJ03 SBJ04 SBJ05 SBJ06
 do
 	for SES in SES01 SES02 SES03
@@ -15,7 +15,7 @@ do
 		do
 			INPUT_FILE=`echo ${PRCS_DATA_DIR}/${SBJ}/${SES}/${RUN}/pb00.${RUN}_TI2_TE1.discard.nii.gz`
 			if [ -f ${INPUT_FILE} ]; then
-					echo "export SBJ=${SBJ} SES=${SES} RUN=${RUN};sh /data/SFIM_CSF_Volume/Project01/Code/bash/S05.sh" >> ${SWARM_FILE}
+					echo "export SBJ=${SBJ} SES=${SES} RUN=${RUN};sh /data/SFIM_CSF_Volume/Project01/Code/bash/S07.sh" >> ${SWARM_FILE}
 			fi
 		done
 	done
